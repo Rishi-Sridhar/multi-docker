@@ -39,7 +39,7 @@ const redisPublisher = redisClient.duplicate();
 
 // express route handlers
 
-app.get('/,',(req,res)=> {
+app.get('/',(req,res)=> {
     res.send('Hola');
 });
 
@@ -65,6 +65,6 @@ app.post('/values', async(req,res)=> {
     res.send({working:true});
 });
 
-app.listen(500, err => {
-    console.log('Sunrela hai bhai 500 pe...')
+app.listen(5000, err => {
+    console.log('Sunrela hai bhai 5000 pe...')
 });
